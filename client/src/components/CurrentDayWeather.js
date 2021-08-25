@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React from "react";
 
 export const CurrentDayWeather = ({ data }) => {
   if (data) {
@@ -14,6 +14,7 @@ export const CurrentDayWeather = ({ data }) => {
               <img
                 style={{ borderRadius: "10px" }}
                 src="https://lorempixel.com/100/190/nature/6"
+                alt=""
               />
             </div>
             <div className="card-stacked">

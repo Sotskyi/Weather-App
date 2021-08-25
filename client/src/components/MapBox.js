@@ -32,7 +32,7 @@ export const MapBox = ({ longitude, latitude }) => {
 
   useEffect(() => {
     map.current.setCenter([longitude, latitude]);
-  }, [longitude]);
+  }, [longitude, latitude]);
 
   return (
     <>

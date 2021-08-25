@@ -4,7 +4,6 @@ const storageName = "userData";
 
 export const useAuth = () => {
   const [token, setToken] = useState(null);
-  const [ready, setReady] = useState(false);
   const [userId, setUserId] = useState(null);
   const [userName, setUserName] = useState(null);
 
@@ -36,8 +35,7 @@ export const useAuth = () => {
     if (data && data.token) {
       login(data.token, data.userId, data.userName);
     }
-    setReady(true);
   }, []);
 
-  return { login, logout, token, userId, ready, userName };
+  return { login, logout, token, userId, userName };
 };

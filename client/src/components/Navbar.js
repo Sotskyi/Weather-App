@@ -1,8 +1,8 @@
 import React, { useContext, useState, useEffect } from "react";
-import { NavLink, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 import { AuthContext } from "../context/authContext";
-import { ChangeInput } from "./ChangeInput";
+import { ChangeUserNameInput } from "./ChangeUserNameInput";
 
 export const Navbar = () => {
   const [isShowChangeInput, setIsShowChangeInput] = useState(false);
@@ -29,13 +29,10 @@ export const Navbar = () => {
       <div className="nav-wrapper amber darken-2" style={{ padding: "0 2rem" }}>
         <span className="brand-logo">Hello {userName}</span>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
-          {/* <li>
-            <NavLink to="/create">Создать</NavLink>
-          </li> */}
           <li>
             <a onClick={changeHandler}>Change username</a>
             {isShowChangeInput && (
-              <ChangeInput
+              <ChangeUserNameInput
                 userName={userName}
                 setIsShowChangeInput={setIsShowChangeInput}
               />

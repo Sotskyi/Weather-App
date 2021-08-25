@@ -1,14 +1,13 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState } from "react";
 
 import { useHttp } from "../hooks/httpHook";
 import { AuthContext } from "../context/authContext";
 import { useMessage } from "../hooks/messageHook";
-// import {Loader} from '../components/Loader'
 
-export const ChangeInput = ({ setIsShowChangeInput }) => {
+export const ChangeUserNameInput = ({ setIsShowChangeInput }) => {
   const [input, setInput] = useState("");
-  const { token, userName, login } = useContext(AuthContext);
-  const { request, loading } = useHttp();
+  const { token, userName } = useContext(AuthContext);
+  const { request } = useHttp();
   const message = useMessage();
 
   const changeHendler = (e) => {

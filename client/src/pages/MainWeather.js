@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 
 import { CurrentDayWeather } from "../components/CurrentDayWeather";
 import { MapBox } from "../components/MapBox";
@@ -19,7 +19,6 @@ export const MainWeather = () => {
         });
 
         setData(data);
-        console.log(data);
       } catch (e) {}
     }
   };
