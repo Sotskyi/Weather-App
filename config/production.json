@@ -1,0 +1,9 @@
+{
+    "port": 5000,
+    "jwtSecret": "someWord",
+    "mongoUri": "mongodb+srv://andrew71241:71241@cluster0-qvxpn.mongodb.net/Weather-APP?retryWrites=true&w=majority",
+    "baseUrl": "http://localhost:5000",
+    "openWeatherKey":"e2ed61092297f9dbb5e6bc2877188e8d",
+    "mapBoxToken":"pk.eyJ1IjoiYW5kcmV3NzEyNDEiLCJhIjoiY2ttdjl1bTYyMDMycTJybzN1YTQ4a3JtaSJ9.JGkpuBGR2XoiAEuCVSLPvA"
+  }
+  
